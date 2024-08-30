@@ -2494,7 +2494,7 @@ Game.CookieUpgrade({name: "Violet macarons",
 
 order = 40000;
 new Game.Upgrade("Magic shenanigans",
-	loc("Cookie production <b>multiplied by 1,000</b>.") + '<q>It\'s magic. I ain\'t gotta explain sh<div style="display:inline-block;background:url(cookies/img/money.png);width:16px;height:16px;position:relative;top:4px;left:0px;margin:0px -2px;"></div>t.</q>',
+	loc("Cookie production <b>multiplied by 1,000</b>.") + '<q>It\'s magic. I ain\'t gotta explain sh<div style="display:inline-block;background:url(img/money.png);width:16px;height:16px;position:relative;top:4px;left:0px;margin:0px -2px;"></div>t.</q>',
 	7, [17, 5], {pool: "debug"}); //debug purposes only
 
 order = 24000;
@@ -6062,7 +6062,7 @@ Game.BankAchievement("Are you gonna eat all that?");
 Game.BankAchievement("We're gonna need a bigger bakery");
 Game.BankAchievement("In the mouth of madness",
 	"A cookie is just what we tell each other it is.");
-Game.BankAchievement('Brought to you by the letter <div style="display:inline-block;background:url(cookies/img/money.png);width:16px;height:16px;"></div>');
+Game.BankAchievement('Brought to you by the letter <div style="display:inline-block;background:url(img/money.png);width:16px;height:16px;"></div>');
 
 Game.CpsAchievement("A world filled with cookies");
 Game.CpsAchievement("When this baby hits " + Game.abbreviateNumber(10000000000000 * 60 * 60, 0, true) + " cookies per hour");
@@ -8589,7 +8589,7 @@ byId("heraldsInLabel").setTitleFunc = function () {
 		str += 'There are no heralds at the moment. Please consider <b style="color:#bc3aff;">donating to DashNet\'s Patreon</b>!';
 	} else {
 		str += (Game.heralds === 1 ? '<b style="color:#bc3aff;text-shadow:0px 1px 0px #6d0096;">1 herald</b> is' : '<b style="color:#fff;text-shadow:0px 1px 0px #6d0096,0px 0px 6px #bc3aff;">' + Game.heralds + " heralds</b> are") +
-			' selflessly inspiring a boost in production for everyone, resulting in<br><b style="color:#cdaa89;text-shadow:0px 1px 0px #7c4532,0px 0px 6px #7c4532;"><div style="width:16px;height:16px;display:inline-block;vertical-align:middle;background:url(cookies/img/money.png);"></div> +' + Game.heralds + "% cookies per second</b>." +
+			' selflessly inspiring a boost in production for everyone, resulting in<br><b style="color:#cdaa89;text-shadow:0px 1px 0px #7c4532,0px 0px 6px #7c4532;"><div style="width:16px;height:16px;display:inline-block;vertical-align:middle;background:url(img/money.png);"></div> +' + Game.heralds + "% cookies per second</b>." +
 			'<div class="line"></div>';
 		if (Game.ascensionMode == 1) { str += "You are in a <b>Born again</b> run, and are not currently benefiting from heralds."; }
 		else if (Game.HasUpgrade("Heralds")) { str += "You own the <b>Heralds</b> upgrade, and therefore benefit from the production boost."; }
@@ -8597,7 +8597,7 @@ byId("heraldsInLabel").setTitleFunc = function () {
 	}
 	str += '<div class="line"></div><span style="font-size:90%;opacity:0.6;"><b>Heralds</b> are people who have donated to DashNet\'s highest Patreon tier, and are limited to 100.<br>Each herald gives everyone +1% CpS.<br>Heralds benefit everyone playing the game, regardless of whether you donated.</span>';
 
-	str += '<div style="width:31px;height:39px;background:url(cookies/img/heraldFlag.png);position:absolute;top:0px;left:8px;"></div><div style="width:31px;height:39px;background:url(cookies/img/heraldFlag.png);position:absolute;top:0px;right:8px;"></div>';
+	str += '<div style="width:31px;height:39px;background:url(img/heraldFlag.png);position:absolute;top:0px;left:8px;"></div><div style="width:31px;height:39px;background:url(img/heraldFlag.png);position:absolute;top:0px;right:8px;"></div>';
 
 	this.dataset.title = '<div style="padding:8px;width:300px;" class="prompt alignCenter"><h3>Heralds</h3><div class="block">' + str + "</div></div>";
 };

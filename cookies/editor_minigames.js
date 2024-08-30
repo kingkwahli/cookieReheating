@@ -1360,7 +1360,7 @@ M.tileTooltip = function (x, y) {
 
 		var dragonBoost = 1 / (1 + 0.05 * Game.auraMult("Supreme Intellect"));
 		str = '<div class="minigameTooltip">' +
-			'<div class="icon" style="background:url(cookies/img/gardenPlants.png);float:left;margin-left:-8px;margin-top:-8px;' + plant.iconCssStr[stage] + '"></div>' +
+			'<div class="icon" style="background:url(img/gardenPlants.png);float:left;margin-left:-8px;margin-top:-8px;' + plant.iconCssStr[stage] + '"></div>' +
 			'<div class="name">' + plant.name + "</div><div><small>" + loc("This plant is growing here.") + "</small></div>" +
 			'<div class="line"></div>' +
 			'<div class="alignCenter">' +
