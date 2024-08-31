@@ -1,29 +1,28 @@
 # Remove existing directories
+rm -r img
 rm -r lib
-rm -r cookies
+rm -r loc
 
 # Create new directories
+mkdir img
 mkdir lib
-mkdir cookies
-mkdir cookies/img
-mkdir cookies/loc
+mkdir loc
+
+# Download files for 'img'
+cd img
+wget -N -i ../update/_imglist.txt -B https://coderpatsy.bitbucket.io/cookies/img/
 
 # Download files for 'lib'
-cd lib
-wget -N -i ../_liblist.txt -B https://coderpatsy.bitbucket.io/lib/
+cd ../lib
+wget -N -i ../update/_liblist.txt -B https://coderpatsy.bitbucket.io/lib/
 
-# Download files for 'cookies'
-cd ../cookies
-wget -N -i ../_cookieslist.txt -B https://coderpatsy.bitbucket.io/cookies/
-
-# Download image files for 'cookies'
-cd img
-wget -N -i ../../_imglist.txt -B https://coderpatsy.bitbucket.io/cookies/img/
-
-# Download location files for 'cookies'
+# Download files for 'loc'
 cd ../loc
-wget -N -i ../../_loclist.txt -B https://coderpatsy.bitbucket.io/cookies/loc/
+wget -N -i ../update/_loclist.txt -B https://coderpatsy.bitbucket.io/cookies/loc/
+
+# Download files for 'root'
+cd ../
+wget -N -i ../update/_rootlist.txt -B https://coderpatsy.bitbucket.io/cookies/
 
 # Download the editor HTML file
-cd ../
 wget -O index.html https://coderpatsy.bitbucket.io/cookies/editor.html
