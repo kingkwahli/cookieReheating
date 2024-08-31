@@ -907,7 +907,7 @@ Game.YouCustomizer.render = function () {
 		ctxAddon.clearRect(0, 0, 32, 32);
 		ctxAddon.drawImage(imgAddons, 8 + addonTile[0] * 32, addonTile[1] * 32, 32, 32, 0, 0, 32, 32);
 
-		var imgDataAddon = ctxAddon.getImageData(0, 0, 32, 32, { willReadFrequently: true });
+		var imgDataAddon = ctxAddon.getImageData(0, 0, 32, 32);
 		var dataAddon = imgDataAddon.data;
 		var x = 0; var y = 0;
 		for (i = 0; i < dataAddon.length; i += 4) {
