@@ -8,7 +8,7 @@ Thanks to @om3ga6400 for original mirror
 
 ### How to update
 
-If the original game updates, run update.sh and...
+If the original updates, run update.sh and...
 
 ### Report update here
 

@@ -12,8 +12,9 @@
 
 	<link rel="stylesheet" href="editor.css">
 
-	<script src="lib/jquery-3.6.4.min.js"></script> <!-- Uses non-.slim animation with the copy button's message -->
-	<script src="lib/base64.js"></script>
+	<script src="/lib/jquery-3.7.1.min.js"></script> <!-- Uses non-.slim animation with the copy button's message -->
+	<script src="/lib/FileSaver-2.0.5.min.js"></script>
+	<script src="/lib/base64.js"></script>
 	<script src="savelib.js"></script>
 </head>
 <body>
@@ -35,6 +36,7 @@
 			<textarea id="importField" placeholder="Paste code here"></textarea>
 			<br>
 			<a id="importButton">Import save</a>
+			<a id="importSaveFile" class="clickable">Import save from file<input id="saveFileInput" type="file"></a>
 			<a id="selImport">Select</a>
 		</div>
 
@@ -43,6 +45,7 @@
 			<br>
 			<textarea id="exportField" readonly></textarea>
 			<br>
+			<a id="exportSaveFile">Export save to file</a>
 			<a id="selExport">Select</a>
 			<a id="copyExport" class="hidden">Select &amp; Copy</a>
 			<span id="copyExportStatus"></span>
