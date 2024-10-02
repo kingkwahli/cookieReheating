@@ -6,7 +6,7 @@ This mirror for, errrr, like, educational purpose, either to download for your o
 
 ### How to update
 
-If the original game updates, run update.sh and...
+If the original updates, run update.sh and...
 
 ### Report update here :)
 
