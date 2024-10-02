@@ -12,4 +12,4 @@ If the original updates, run update.sh and...
 
 ### Report update here
 
-If you happen to update, please make a pull request for me to update the main branch, thanks!
+If you notice theres a update, please make a pull request for me to update the main branch, thanks!
