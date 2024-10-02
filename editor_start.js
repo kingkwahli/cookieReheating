@@ -1,6 +1,8 @@
 (function (window, $) {
 "use strict";
 
+/* global saveAs */
+
 var Game = window.Game;
 var byId = window.byId;
 var document = window.document;
@@ -9533,11 +9535,30 @@ $("#importButton").on("click", function () {
 	Game.importSave(importField.value);
 });
 
+$("#saveFileInput").on("change", function (ev) {
+	if (ev.target.files.length == 0) { return false; }
+	var file = ev.target.files[0];
+	var reader = new FileReader();
+	reader.onload = function (e) {
+		if (Game.importSave(e.target.result)) {
+			importField.value = e.target.result;
+		}
+	};
+	reader.readAsText(file);
+});
+
 $("#selImport").on("click", function () {
 	importField.select();
 });
 
 var exportField = byId("exportField");
+
+$("#exportSaveFile").on("click", function () {
+	var filename = Game.bakeryName.replace(/[^a-zA-Z0-9]+/g, "") + "Bakery";
+	var text = Game.exportSave();
+	var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+	saveAs(blob, filename + ".txt");
+});
 
 $("#selExport").on("click", function () {
 	exportField.select();
